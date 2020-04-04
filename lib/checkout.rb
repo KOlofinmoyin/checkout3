@@ -1,5 +1,17 @@
 class Shop
+
   def checkout(basket)
-    basket == 'A' ? 50 : basket == 'B' ? 30 : basket == 'C' ? 20 : 15
+      @total ||= 0
+
+    basket.each_char { |item|
+        items ={
+          'A': 50,
+          'B': 30,
+          'C': 20,
+          'D': 15
+        }
+      @total += items[item.to_sym]
+    }
+    @total
   end
 end
