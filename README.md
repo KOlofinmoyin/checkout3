@@ -49,8 +49,8 @@ shop.checkout('AAAAAA') # => 260
 enter ('A') # => 50
 enter ('B') # => 30
 enter ('C') # => 20
-
 enter ('D') # => 15
+
 enter ('AA') # => 100
 enter ('CC') # => 40
 enter ('ABCD') # => 115
