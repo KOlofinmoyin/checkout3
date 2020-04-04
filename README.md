@@ -55,9 +55,9 @@ enter ('CC') # => 40
 enter ('ABCD') # => 115
 enter ('AAA') # => 130
 enter ('AAABAAAAAC') # => 410
+enter ('AAAAAA') # => 260
 
 enter ('BB') # => 45
-enter ('AAAAAA') # => 260
 enter ('aBc') # => -1
 enter ('-B8x') # => -1
 enter (18) # => -1

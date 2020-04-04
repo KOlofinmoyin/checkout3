@@ -44,6 +44,16 @@ RSpec.describe Shop do
     it "#checkout takes ('AAABAAAAAC') and returns 410" do
       expect(shop.checkout('AAABAAAAAC')).to eq 410
     end
+
+    it "#checkout takes ('AAAAAA') and returns 260" do
+      expect(shop.checkout('AAAAAA')).to eq 260
+    end
+
+    it "#checkout takes ('BB') and returns 45" do
+      expect(shop.checkout('BB')).to eq 45
+    end
+
+
   end
 
 end
