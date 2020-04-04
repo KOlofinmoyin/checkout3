@@ -56,6 +56,12 @@ RSpec.describe Shop do
     it "#checkout takes ('AAABAAABABAC') and returns 455" do
       expect(shop.checkout('AAABAAABABAC')).to eq 455
     end
+
+        context "error-conditions" do
+          it "takes ('aBc') and returns -1" do
+            expect(shop.checkout('aBc')).to eq -1
+          end
+        end
   end
 
 end
