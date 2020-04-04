@@ -65,6 +65,10 @@ RSpec.describe Shop do
           it "takes ('-B8x') and returns -1" do
             expect(shop.checkout('-B8x')).to eq -1
           end
+
+          it "takes (18) and returns -1" do
+            expect(shop.checkout(18)).to eq -1
+          end
         end
   end
 
