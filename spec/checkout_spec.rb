@@ -21,10 +21,23 @@ RSpec.describe Shop do
     end
   end
 
-  context "discounts" do
+  context "purchasing multiple items, without applying any discount" do
     it "#checkout takes ('AA') and returns 100" do
-    expect(shop.checkout('AA')).to eq 100
+      expect(shop.checkout('AA')).to eq 100
     end
+
+    it "#checkout takes ('CC') and returns 40" do
+      expect(shop.checkout('CC')).to eq 40
+    end
+
+    it "#checkout takes ('ABCD') and returns 115" do
+      expect(shop.checkout('ABCD')).to eq 115
+    end
+
+  end
+
+  context "discounts" do
+
   end
 
 end
