@@ -2,6 +2,7 @@ class Shop
 
   def checkout(basket)
       @total ||= 0
+      @discount_A ||= 0
 
     basket.each_char { |item|
         items ={
@@ -10,9 +11,9 @@ class Shop
           'C': 20,
           'D': 15
         }
-        return 130 if basket == 'AAA'
-      @total += items[item.to_sym]
+      @total += (items[item.to_sym] - @discount_A)
     }
-    @total
+    @discount_A = (basket.count('A') / 3) * 20
+    @total -= @discount_A
   end
 end
