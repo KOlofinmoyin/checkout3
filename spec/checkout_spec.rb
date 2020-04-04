@@ -5,4 +5,9 @@ RSpec.describe Shop do
     shop = Shop.new
     expect(shop.checkout('A')).to eq 50
   end
+
+  it "#checkout takes ('B') and returns 30" do
+    shop = Shop.new
+    expect(shop.checkout('B')).to eq 30
+  end
 end
