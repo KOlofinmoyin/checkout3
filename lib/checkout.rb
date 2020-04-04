@@ -4,8 +4,8 @@ class Shop
       @total ||= 0
       @discount_A ||= 0
 
-    return -1 if basket == 18
-    
+    return -1 if !basket.is_a?(String)
+
     basket.each_char { |item|
         items ={
           'A': 50,
