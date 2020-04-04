@@ -53,8 +53,8 @@ enter ('D') # => 15
 enter ('AA') # => 100
 enter ('CC') # => 40
 enter ('ABCD') # => 115
-
 enter ('AAA') # => 130
+
 enter ('BB') # => 45
 enter ('AAAAAA') # => 260
 enter ('aBc') # => -1

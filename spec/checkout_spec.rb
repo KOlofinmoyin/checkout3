@@ -37,7 +37,9 @@ RSpec.describe Shop do
   end
 
   context "discounts" do
-
+    it "#checkout takes ('AAA') and returns 130" do
+      expect(shop.checkout('AAA')).to eq 130
+    end
   end
 
 end
