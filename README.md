@@ -58,8 +58,8 @@ enter ('AAABAAAAAC') # => 410
 enter ('AAAAAA') # => 260
 enter ('BB') # => 45
 enter ('AAABAAABABAC') # => 455
-
 enter ('aBc') # => -1
+
 enter ('-B8x') # => -1
 enter (18) # => -1
 ```
